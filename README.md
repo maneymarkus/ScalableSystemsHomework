@@ -1,2 +1,2 @@
 # ScalableSystemsHomework
-First two homeworks of the course scalable systems at TU Berlin
+First two homeworks of the course Scalable Systems at TU Berlin
