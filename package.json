@@ -8,7 +8,6 @@
     "css-loader": "^3.5.3",
     "fsevents": "^0.1.0",
     "jquery": "^3.5.0",
-    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.0",
     "popper.js": "^1.16.1",
     "postcss-loader": "^3.0.0",
@@ -22,7 +21,8 @@
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass src/scss -o src/css"
   },
   "repository": {
     "type": "git",
