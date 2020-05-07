@@ -5,9 +5,14 @@
     src: url(../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Dancing Script", sans-serif;
 }
 
 $bg-color: color("teal");
