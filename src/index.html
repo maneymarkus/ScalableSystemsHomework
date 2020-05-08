@@ -9,12 +9,10 @@
 
     <title>Awesome TODO-List</title>
 
-    
+
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/material-icons.css" type="text/css" />
-    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
-
-    <script src="https://kit.fontawesome.com/ce0d235421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
 
     <!--
 
@@ -25,53 +23,56 @@
 </head>
 <body>
 
-  <h1 align="center"> <a href="index.html" class="text-decoration-none">My Todo-List.html</a></h1>
+  <header class="container-fluid text-center p-1">
+    <a href="index.html" class="text-decoration-none">My Todo-List.html</a>
+  </header>
 
-  <h2 align="center">Felix' Todo-List</h2>
+  <h1 class="text-center p-5">Felix' Todo-List</h1>
 
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col"></th>
-        <th scope="col">Deadline</th>
-        <th scope="col">Aufgabe</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">
-          <i class="fas fa-check-square"></i>
-        </th>
-        <td>09.05.2020</td>
-        <td>Design Konzept erstellen</td>
-        <td><a href=edit.html><i class="fas fa-edit"></i></a></td>
-        <td><i class="fas fa-window-close"></i></td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <i class="fas fa-check-square"></i>
-        </th>
-        <td>11.05.2020</td>
-        <td>Website erstellen und ausgiebig testen</td>
-        <td><a href=edit.html><i class="fas fa-edit"></i></a></td>
-        <td><i class="fas fa-window-close"></i></td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <i class="fas fa-check-square"></i>
-        </th>
-        <td>14.05.2020</td>
-        <td>Präsentieren</td>
-        <td><a href=edit.html><i class="fas fa-edit"></i></a></td>
-        <td><i class="fas fa-window-close"></i></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <a href="add.html" class="btn btn-secondary btn-lg active btn-block" role="button" aria-pressed="true"> <i class="fas fa-plus-square"></i> Add new Todo</a>
+  <div class="container-xl text-center">
+    <table class="table table-hover text-left">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Deadline</th>
+          <th>Aufgabe</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="material-icons">done</i></a></td>
+          <td>09.05.2020</td>
+          <td class="position-relative"><a class="stretched-link" href=edit.html>Design Konzept erstellen</a></td>
+          <td><a href="#" class="delete"><i class="material-icons">clear</i></a></td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="material-icons">done</i></a></td>
+          <td>11.05.2020</td>
+          <td class="position-relative"><a class="stretched-link" href=edit.html>Website erstellen und ausgiebig testen</td>
+          <td><a href="#" class="delete"><i class="material-icons">clear</i></a></td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="material-icons">done</i></a></td>
+          <td>14.05.2020</td>
+          <td class="position-relative"><a class="stretched-link" href=edit.html>Präsentieren</a></td>
+          <td><a href="#" class="delete"><i class="material-icons">clear</i></a></td>
+        </tr>
+      </tbody>
+    </table>
 
-  <h3 align="center"> <a href=impressum.html>Impressum</a> </h3>
+    <a href="add.html" class="btn btn-outline-primary" role="button" aria-pressed="true">
+      <i class="material-icons align-top">add</i>
+      Add new Todo
+    </a>
+
+  </div>
+
+  <footer class="text-center mt-5 p-4">
+    <a class="d-inline-block mb-3" href="impressum.html">Impressum</a>
+    <br />
+    <p class="m-0"><span class="align-top">&copy;</span> My Todo-List</p>
+  </footer>
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/popper.min.js"></script>

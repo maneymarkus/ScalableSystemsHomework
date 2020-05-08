@@ -7138,7 +7138,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-/* @font-face {
+@font-face {
   font-family: "Yanone Kaffeesatz";
   src: url(../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf); }
 
@@ -7148,8 +7148,71 @@ a.text-dark:hover, a.text-dark:focus {
 
 * {
   box-sizing: border-box;
-  font-family: "Dancing Script", sans-serif; }
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+html {
+  font-size: 1.25rem; }
 
 body {
-  background: #20c997; }
- */
+  background-color: #EEEEEE;
+  color: #0B132B; }
+
+header a, h1 {
+  font-family: "Dancing Script"; }
+
+header {
+  font-size: 1.5rem;
+  background-color: #1C2541; }
+
+header a {
+  color: #FFFFFF; }
+
+h1 {
+  background-color: #5BC0BE; }
+
+footer {
+  background-color: #0B132B; }
+
+footer a {
+  color: #6FFFE9;
+  font-size: 1.5rem; }
+
+footer p {
+  color: #EEEEEE;
+  font-size: 0.75rem; }
+
+footer span {
+  font-size: 1rem; }
+
+.impressum i {
+  border-radius: 50%;
+  background-color: white;
+  font-size: 15rem; }
+
+.impressum p {
+  font-size: 2rem; }
+
+.table td, .table i {
+  vertical-align: middle; }
+
+.table td:nth-of-type(2) {
+  opacity: 0.75; }
+
+.table .delete {
+  border-radius: 3px;
+  padding: 0.25rem 0.125rem;
+  color: #9A031E;
+  transition: 0.2s ease; }
+
+.table .delete:hover {
+  color: #1C2541;
+  background-color: #9A031E; }
+
+.btn {
+  color: #1C2541;
+  border-color: #1C2541; }
+
+.btn:hover {
+  color: #EEEEEE;
+  background-color: #1C2541;
+  border-color: #1C2541; }
