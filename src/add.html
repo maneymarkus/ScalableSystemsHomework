@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes" />
+    <meta name="keywords" content="Todo, List, Todo-List" />
+    <meta name="description" content="This will be one of the nicest TODO-Lists ever created" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Add new Todo</title>
+
+    
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/material-icons.css" type="text/css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/ce0d235421.js" crossorigin="anonymous"></script>
+
+    <!--
+
+        Webdesign by Markus Städler, weberlin-design.de, markus.staedler@weberlin-design.de
+
+    -->
+
+</head>
+<body>
+
+  <h1 align="center"> <a href="index.html" class="text-decoration-none">My Todo-List.html</a></h1>
+
+  <h2 align="center"> Felix' Todo-List - Add a new Todo </h2>
+
+  <form>
+    <div class="form-group row">
+        <label for="Deadline" class="col-2 col-form-label">Deadline</label>
+        <div class="col-8">
+          <input class="form-control" type="date" value="2020-05-08" id="deadlineinput" size="50">
+        </div>
+    </div>
+    <div class="form-group row">
+      <label for="Task" class="col-2 col-form-label">Task:</label>
+      <div class="col-8">
+        <input class="form-control" type="text" id="task"maxlength="160">
+      </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2">Do you want your progress tracked?</div>
+        <div class="col-sm-8">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="progresschecker">
+          </div>
+        </div>
+      </div>
+
+     <div class="form-group row">
+        <label for="progress" class="col-2 col-form-label">How much has already been done?</label>
+        <div class="col-8">
+            <input type="range" class="form-control-range" id="formControlRange" onchange="rangevalue.value=value">
+            <output id="rangevalue">50</output>
+        </div>
+      </div>
+
+      <a class="btn btn-primary" href="index.html" role="button">Submit</a>
+      <a class="btn btn-primary" href="index.html" role="button">Cancel</a>
+  </form>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/script.min.js"></script>
+</body>
+</html>
