@@ -7151,9 +7151,11 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Yanone Kaffeesatz", sans-serif; }
 
 html {
+  height: 100%;
   font-size: 1.25rem; }
 
 body {
+  min-height: 100%;
   background-color: #EEEEEE;
   color: #0B132B; }
 
@@ -7174,6 +7176,8 @@ h1 {
   background-color: #5BC0BE; }
 
 footer {
+  bottom: 0;
+  width: 100%;
   background-color: #0B132B; }
 
 footer a {

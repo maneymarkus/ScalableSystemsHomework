@@ -16,10 +16,12 @@
 }
 
 html {
+  height: 100%;
   font-size: 1.25rem;
 }
 
 body {
+  min-height: 100%;
   background-color: #EEEEEE;
   color: #0B132B;
 }
@@ -46,6 +48,8 @@ h1 {
 }
 
 footer {
+  bottom: 0;
+  width: 100%;
   background-color: #0B132B;
 }
 
