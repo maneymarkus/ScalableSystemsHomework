@@ -4,6 +4,7 @@
   "description": "First two homeworks of the course scalable systems at TU Berlin",
   "main": "index.js",
   "dependencies": {
+    "autoprefixer": "^9.7.6",
     "bootstrap": "^4.4.1",
     "css-loader": "^3.5.3",
     "fsevents": "^0.1.0",

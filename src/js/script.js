@@ -2,13 +2,13 @@ function init(window, document, undefined) {
 
   let Module = (function(window, document, undefined) {
 
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    });
-
-    $("#form-control-range").change(function() {
-      $("#form-control-range").attr("title", $("#form-control-range").val());
-    });
+    if (slider = document.getElementById("myRange")) {
+      var output = document.getElementById("progresspercent");
+      output.innerHTML = slider.value + "%";
+      slider.oninput = function () {
+        output.innerHTML = this.value + "%";
+      }
+    }
 
   })(window, document);
 
