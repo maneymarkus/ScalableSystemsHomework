@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  margin-bottom: 135px;
+  padding-bottom: 15rem;
   min-height: 100%;
   background-color: #EEEEEE;
   color: #0B132B;
@@ -48,9 +48,16 @@ h1 {
   background-color: #5BC0BE;
 }
 
+.container-xl {
+  font-size: 1.2rem;
+}
+
+.container-xl .row {
+  align-items: center;
+}
+
 footer {
   position: absolute;
-  height: 130px;
   bottom: 0;
   width: 100%;
   background-color: #0B132B;
@@ -80,22 +87,14 @@ footer span {
   font-size: 2rem;
 }
 
-.table td, .table i {
-  vertical-align: middle;
-}
-
-.table td:nth-of-type(2) {
-  opacity: 0.75;
-}
-
-.table .delete {
+a.delete i {
+  padding: 0.2rem;
   border-radius: 3px;
-  padding: 0.25rem 0.125rem;
   color: #9A031E;
-  transition: 0.2s ease;
+    transition: 0.2s ease;
 }
 
-.table .delete:hover {
+a.delete:hover i {
   color: #1C2541;
   background-color: #9A031E;
 }
@@ -171,13 +170,27 @@ footer span {
 .tooltip .arrow::before {
   border-top-color: #5BC0BE;
 }
-.table {
-  display:table;                     
+
+.table-header {
+  font-size: 1.5em;
 }
-.table-row {
-  display:table-row;
+
+.deadline {
+  color: #3A506B;
+  font-size: 0.9em;
 }
-.table-cell {
-  display: table-cell;
-  text-align:left;    
+
+.progress {
+  height: 2px;
+  bottom: 0;
+  z-index: 0;
+  transition: 0.2s ease;
+}
+
+.progress-bar {
+  background-color: #5BC0BE;
+}
+
+.row:hover .progress {
+  height: 100%;
 }

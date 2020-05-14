@@ -34,11 +34,11 @@
   <div class="container-xl">
     <form>
       <div class="form-group row">
-        <div class="col-4">
+        <div class="col-sm-4">
           <label for="Deadline" class="heading-label font-weight-bold col-form-label">Deadline:</label>
           <input class="form-control" type="date" value="2020-05-09" id="deadlineinput">
         </div>
-        <div class="col-8">
+        <div class="col-sm-8">
           <label for="Task" class="heading-label font-weight-bold col-form-label">Task:</label>
           <input class="form-control" type="text" value="Design Konzept erstellen" id="task" maxlength="160">
         </div>
@@ -61,7 +61,7 @@
           <p>
             <span style="margin: auto; display:table" id=progresspercent></span>
           </p>
-          <input type="range" class="custom-range" id="myRange" value="63">
+          <input type="range" class="custom-range" id="myRange" value="100">
         </div>
       </div>
 
@@ -71,7 +71,7 @@
         output.innerHTML = slider.value + "%";
         slider.oninput = function () {
           output.innerHTML = this.value + "%";
-        } 
+        }
       </script>
 
       <div class="mt-3 clear row justify-content-around">
