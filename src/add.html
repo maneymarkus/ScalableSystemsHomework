@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes" />
-    <meta name="keywords" content="Todo, List, Todo-List" />
-    <meta name="description" content="This will be one of the nicest TODO-Lists ever created" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes" />
+  <meta name="keywords" content="Todo, List, Todo-List" />
+  <meta name="description" content="This will be one of the nicest TODO-Lists ever created" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title>Add new Todo</title>
+  <title>Add new Todo</title>
 
 
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/material-icons.css" type="text/css" />
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/material-icons.css" type="text/css" />
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
 
-    <!--
+  <!--
 
         Webdesign by Markus Städler, weberlin-design.de, markus.staedler@weberlin-design.de
 
     -->
 
 </head>
+
 <body class="position-relative">
 
   <header class="container-fluid text-center p-1">
@@ -38,7 +40,7 @@
         </div>
         <div class="col-8">
           <label for="Task" class="heading-label font-weight-bold col-form-label">Task:</label>
-          <input class="form-control" type="text" id="task"maxlength="160">
+          <input class="form-control" type="text" id="task" maxlength="160">
         </div>
       </div>
 
@@ -46,13 +48,14 @@
         <div class="col">
           <div class="custom-control custom-switch pl-0">
             <span class="font-weight-bold heading-label">Do you want your progress tracked?</span>
-            <input class="custom-control-input" type="checkbox" id="progress-switch" data-toggle="collapse" data-target="#progress-collapse">
+            <input class="custom-control-input" type="checkbox" id="progress-switch" data-toggle="collapse"
+              data-target="#progress-collapse">
             <label class="font-weight-bold heading-label custom-control-label ml-5 mt-1" for="progress-switch"></label>
           </div>
         </div>
       </div>
 
-       <div class="collapse row" id="progress-collapse">
+      <div class="collapse row" id="progress-collapse">
         <div class="col">
           <label for="progress" class="pb-5 font-weight-bold heading-label col-form-label">How much has already been
             done?</label>
@@ -79,15 +82,17 @@
     </form>
   </div>
 
-  <footer class="text-center mt-5 p-4 position-absolute">
+  <footer class="text-center mt-5 p-4 fixed-bottom">
     <a class="d-inline-block mb-3" href="impressum.html">Impressum</a>
     <br />
     <p class="m-0"><span class="align-top">&copy;</span> My Todo-List</p>
   </footer>
+
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/popper.js"></script>
   <script src="./js/bootstrap.js"></script>
   <script src="./js/script.js"></script>
 </body>
+
 </html>
