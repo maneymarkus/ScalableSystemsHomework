@@ -7292,3 +7292,16 @@ a.delete:hover i {
 
 .row:hover .progress {
   height: 100%; }
+
+.todo, .todo a {
+  transition: 0.2s ease; }
+
+.task-done {
+  opacity: 0.7; }
+
+.task-done .progress-bar {
+  background-color: #C1C1C1; }
+
+.task-done a {
+  color: black;
+  text-decoration: line-through; }
