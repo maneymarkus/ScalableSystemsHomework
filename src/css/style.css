@@ -7305,3 +7305,13 @@ a.delete:hover i {
 .task-done a {
   color: black;
   text-decoration: line-through; }
+
+.btn.delete-btn {
+  color: #9A031E;
+  border-color: #9A031E;
+  background-color: white; }
+
+.btn.delete-btn:hover {
+  background-color: #9A031E;
+  border-color: #9A031E;
+  color: black; }

@@ -91,7 +91,7 @@ a.delete i {
   padding: 0.2rem;
   border-radius: 3px;
   color: #9A031E;
-    transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 a.delete:hover i {
@@ -210,4 +210,16 @@ a.delete:hover i {
 .task-done a {
   color: black;
   text-decoration: line-through;
+}
+
+.btn.delete-btn {
+  color: #9A031E;
+  border-color: #9A031E;
+  background-color: white;
+}
+
+.btn.delete-btn:hover {
+  background-color: #9A031E;
+  border-color: #9A031E;
+  color: black;
 }
