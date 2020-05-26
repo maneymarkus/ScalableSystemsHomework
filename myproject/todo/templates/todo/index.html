@@ -1,0 +1,159 @@
+{%load static%}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes" />
+  <meta name="keywords" content="Todo, List, Todo-List" />
+  <meta name="description" content="This will be one of the nicest TODO-Lists ever created" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <title>Awesome TODO-List</title>
+
+
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="{%static 'todo/css/material-icons.css'%}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'todo/css/style.css'%}" type="text/css" />
+
+  <!--
+
+        Webdesign by Markus Städler, weberlin-design.de, markus.staedler@weberlin-design.de
+
+    -->
+
+</head>
+
+
+<body class="position-relative">
+
+  <header class="container-fluid text-center p-1">
+    <a href="index.html" class="text-decoration-none">My Todo-List.html</a>
+  </header>
+
+  <h1 class="text-center p-5 mb-4">Felix' Todo-List</h1>
+
+  <div class="container-xl">
+    <div class="row table-header mb-3 font-weight-bold border-bottom border-dark">
+      <div class="col-1">
+        <!-- placeholder -->
+      </div>
+      <div class="col-9 row text-left">
+        <div class="col-sm-4 deadline">
+          Deadline
+        </div>
+        <div class="col-sm-8">
+          Task
+        </div>
+      </div>
+      <div class="col-1">
+        <!-- placeholder -->
+      </div>
+      <div class="col-1">
+        <!-- placeholder -->
+      </div>
+    </div>
+
+    {% for todo in todo_list %}
+      {%if todo.done or 100 == todo.progress%}
+
+      <!-- HIER MUSS NOCH DURCHGESTRICHEN WERDEN ????-->
+    <div class="row mb-1 position-relative border-top">
+      <div class="progress col-12 position-absolute">
+        <div class="progress-bar" role="progressbar" style="width: {{ todo.progress }}%;"></div>
+      </div>
+      <div class="col-1">
+        <a class="stretched-link" href="#"><i class="material-icons">done</i></a>
+      </div>
+      <div class="col-9 row text-left font-weight-bold">
+        <div class="col-sm-4 deadline">
+          {{todo.date}}
+        </div>
+        <div class="col-sm-8">
+          <a class="stretched-link" href="{%url 'edit' todo.id %}">{{todo.text }}</a>
+        </div>
+      </div>
+      <div class="col-1">
+        {{ todo.progress }}%
+      </div>
+      <div class="col-1">
+        <a href="{%url 'delete' todo.id%}" class="delete"><i class="material-icons">clear</i></a>
+      </div>
+    </div>
+    {%elif True == todo.track or 0 < todo.progress %}
+
+    <div class="row mb-1 position-relative border-top">
+      <div class="progress col-12 position-absolute">
+        <div class="progress-bar" role="progressbar" style="width: {{ todo.progress }}%;"></div>
+      </div>
+      <div class="col-1">
+        <a class="stretched-link" href="#"><i class="material-icons">done</i></a>
+      </div>
+      <div class="col-9 row text-left font-weight-bold">
+        <div class="col-sm-4 deadline">
+          {{todo.date}}
+        </div>
+        <div class="col-sm-8">
+          <a class="stretched-link" href="{%url 'edit' todo.id %}">{{ todo.text }}</a>
+        </div>
+      </div>
+      <div class="col-1">
+        {{ todo.progress }}%
+      </div>
+      <div class="col-1">
+        <a href="{%url 'delete' todo.id %}" class="delete"><i class="material-icons">clear</i></a>
+      </div>
+    </div>
+
+    {%else%}
+
+    <!-- HIER KANN MAN NOCH DIE PROGRESS BAR LÖSCHEN WENN MAN DAS MÖCHTE -->
+    <div class="row mb-1 position-relative border-top">
+      <div class="progress col-12 position-absolute">
+        <div class="progress-bar" role="progressbar" style="width: 0%;"></div>
+      </div>
+      <div class="col-1">
+        <a class="stretched-link" href="#"><i class="material-icons">done</i></a>
+      </div>
+      <div class="col-9 row text-left font-weight-bold">
+        <div class="col-sm-4 deadline">
+          {{todo.date}}
+        </div>
+        <div class="col-sm-8">
+          <a class="stretched-link" href="{%url 'edit' todo.id %}">{{ todo.text }}</a>
+        </div>
+      </div>
+      <div class="col-1">
+        {{ todo.progress }}%
+      </div>
+      <div class="col-1">
+        <a href="{%url 'delete' todo.id%}" class="delete"><i class="material-icons">clear</i></a>
+      </div>
+    </div>
+
+    {%endif%}
+    {% endfor %}
+
+    <div class="row justify-content-center">
+      <a href="add.html" class="mt-3 btn btn-outline-primary" role="button" aria-pressed="true">
+        <i class="material-icons align-top">add</i>
+        Add new Todo
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="text-center mt-5 p-4 fixed-bottom">
+    <a class="d-inline-block mb-3" href="impressum.html">Impressum</a>
+    <br />
+    <p class="m-0"><span class="align-top">&copy;</span> My Todo-List</p>
+  </footer>
+
+
+  <script src="{%static 'todo/js/jquery.min.js'%}"></script>
+  <script src="{%static 'todo/js/popper.min.js'%}"></script>
+  <script src="{%static 'todo/js/bootstrap.min.js'%}"></script>
+  <script src="{%static 'todo/js/script.js'%}"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+@font-face {
+    font-family: "Yanone Kaffeesatz";
+    src: url(../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+html {
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+body {
+  padding-bottom: 15rem;
+  min-height: 100%;
+  background-color: #EEEEEE;
+  color: #0B132B;
+}
+
+header a, h1 {
+  font-family: "Dancing Script";
+}
+
+header {
+  font-size: 1.5rem;
+  background-color: #1C2541;
+}
+
+header a {
+  color: #FFFFFF;
+}
+
+header a:hover {
+  color: #5BC0BE;
+}
+
+h1 {
+  background-color: #5BC0BE;
+}
+
+.container-xl {
+  font-size: 1.2rem;
+}
+
+.container-xl .row {
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #0B132B;
+}
+
+footer a {
+  color: #6FFFE9;
+  font-size: 1.5rem;
+}
+
+footer p {
+  color: #EEEEEE;
+  font-size: 0.75rem;
+}
+
+footer span {
+  font-size: 1rem;
+}
+
+.impressum i {
+  border-radius: 50%;
+  background-color: white;
+  font-size: 15rem;
+}
+
+.impressum p {
+  font-size: 2rem;
+}
+
+a.delete i {
+  padding: 0.2rem;
+  border-radius: 3px;
+  color: #9A031E;
+    transition: 0.2s ease;
+}
+
+a.delete:hover i {
+  color: #1C2541;
+  background-color: #9A031E;
+}
+
+.btn {
+  color: #1C2541;
+  border-color: #1C2541;
+}
+
+.btn:hover {
+  color: #EEEEEE;
+  background-color: #1C2541;
+  border-color: #1C2541;
+}
+
+.heading-label {
+  font-size: 1.5rem;
+}
+
+.cancel {
+  color: #9A031E;
+  border-color: #9A031E;
+}
+
+.cancel:hover {
+  background-color: #9A031E;
+  border-color: #9A031E;
+}
+
+.custom-switch.custom-switch .custom-control-label {
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.custom-switch.custom-switch .custom-control-label::before {
+    height: 1.5rem;
+    width: calc(2rem + 0.75rem);
+    border-radius: 3rem;
+}
+
+.custom-switch.custom-switch .custom-control-label::after {
+    width: calc(1.5rem - 4px);
+    height: calc(1.5rem - 4px);
+    border-radius: calc(2rem - (1.5rem / 2));
+}
+
+.custom-switch.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(calc(1.5rem - 0.25rem));
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #5BC0BE;
+  border-color: #5BC0BE;
+}
+
+.custom-switch .custom-control-label::after {
+  background-color: #5BC0BE;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: #5BC0BE;
+}
+
+.custom-range::-moz-range-thumb {
+  background: #5BC0BE;
+}
+
+.tooltip-inner {
+  color: #0B132B;
+  background-color: #5BC0BE;
+}
+
+.tooltip .arrow::before {
+  border-top-color: #5BC0BE;
+}
+
+.table-header {
+  font-size: 1.5em;
+}
+
+.deadline {
+  color: #3A506B;
+  font-size: 0.9em;
+}
+
+.progress {
+  height: 2px;
+  bottom: 0;
+  z-index: 0;
+  transition: 0.2s ease;
+}
+
+.progress-bar {
+  background-color: #5BC0BE;
+}
+
+.row:hover .progress {
+  height: 100%;
+}
