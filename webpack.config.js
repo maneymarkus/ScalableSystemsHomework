@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry : "./src/js/bundler.js",
   output : {
-    path : path.resolve(__dirname, "./dist/js"),
+    path : path.resolve(__dirname, "./backend/todoListProject/todoList/static/todoList/js"),
     filename : "todo.bundle.js",
   },
   module : {
