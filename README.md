@@ -122,7 +122,7 @@ git clone https://maneymarkus/ScalableSystemsHomework.git
 ```
 2. Start the server
 ```sh
-YourPathToTheProject\ScalableSystemsHomework\myproject python manage.py runserver
+YourPathToTheProject\ScalableSystemsHomework\backend\todoListProject python manage.py runserver
 ```
 
 
