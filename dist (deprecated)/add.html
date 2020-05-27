@@ -55,23 +55,13 @@
 
       <div class="collapse row" id="progress-collapse">
         <div class="col">
-          <label for="progress" class="pb-5 font-weight-bold heading-label col-form-label">How much has already been
-            done?</label>
+          <label for="progress" class="pb-5 font-weight-bold heading-label col-form-label">How much has already been done?</label>
           <p>
             <span style="margin: auto; display:table" id=progresspercent></span>
           </p>
           <input type="range" class="custom-range" id="myRange" value="0">
         </div>
       </div>
-
-      <script>
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("progresspercent");
-        output.innerHTML = slider.value + "%";
-        slider.oninput = function () {
-          output.innerHTML = this.value + "%";
-        }
-      </script>
 
       <div class="mt-3 clear row justify-content-around">
         <a class="btn btn-outline-primary" href="index.html" role="button">Submit</a>
@@ -80,7 +70,7 @@
     </form>
   </div>
 
-  <footer class="text-center mt-5 p-4 fixed-bottom">
+  <footer class="text-center mt-5 p-4">
     <a class="d-inline-block mb-3" href="impressum.html">Impressum</a>
     <br />
     <p class="m-0"><span class="align-top">&copy;</span> My Todo-List</p>

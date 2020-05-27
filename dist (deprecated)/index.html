@@ -44,70 +44,70 @@
         <!-- placeholder -->
       </div>
     </div>
-    <div class="row mb-1 position-relative border-top">
+    <div class="row mb-1 position-relative border-top todo">
       <div class="progress col-12 position-absolute">
         <div class="progress-bar" role="progressbar" style="width: 100%;"></div>
       </div>
       <div class="col-1">
-        <a class="stretched-link" href="#"><i class="material-icons">done</i></a>
+        <a class="stretched-link todo-done" href="#"><i class="material-icons">done</i></a>
       </div>
       <div class="col-9 row text-left font-weight-bold">
         <div class="col-sm-4 deadline">
           09.05.2020
         </div>
         <div class="col-sm-8">
-          <a class="stretched-link" href="edit.html">Design Konzept erstellen</a>
+          <a class="stretched-link task" href="edit.html">Design Konzept erstellen</a>
         </div>
       </div>
       <div class="col-1">
         100%
       </div>
       <div class="col-1">
-        <a href="#" class="delete"><i class="material-icons">clear</i></a>
+        <a href="#" class="delete" data-toggle="modal" data-target="#delete-modal"><i class="material-icons">clear</i></a>
       </div>
     </div>
-    <div class="row mb-1 position-relative border-top">
+    <div class="row mb-1 position-relative border-top todo">
       <div class="progress col-12 position-absolute">
         <div class="progress-bar" role="progressbar" style="width: 25%;"></div>
       </div>
       <div class="col-1">
-        <a class="stretched-link" href="#"><i class="material-icons">done</i></a>
+        <a class="stretched-link todo-done" href="#"><i class="material-icons">done</i></a>
       </div>
       <div class="col-9 row text-left font-weight-bold">
         <div class="col-sm-4 deadline">
           12.05.2020
         </div>
         <div class="col-sm-8">
-          <a class="stretched-link" href="edit.html">Website fertigstellen und ausgiebig testen</a>
+          <a class="stretched-link task" href="edit.html">Website fertigstellen und ausgiebig testen</a>
         </div>
       </div>
       <div class="col-1">
         25%
       </div>
       <div class="col-1">
-        <a href="#" class="delete"><i class="material-icons">clear</i></a>
+        <a href="#" class="delete" data-toggle="modal" data-target="#delete-modal"><i class="material-icons">clear</i></a>
       </div>
     </div>
-    <div class="row mb-1 position-relative border-top">
+    <div class="row mb-1 position-relative border-top todo">
       <div class="progress col-12 position-absolute">
         <div class="progress-bar" role="progressbar" style="width: 0%;"></div>
       </div>
       <div class="col-1">
-        <a class="stretched-link" href="#"><i class="material-icons">done</i></a>
+        <a class="stretched-link todo-done" href="#"><i class="material-icons">done</i></a>
       </div>
       <div class="col-9 row text-left font-weight-bold">
         <div class="col-sm-4 deadline">
           14.05.2020
         </div>
         <div class="col-sm-8">
-          <a class="stretched-link" href="edit.html">Ergebnisse präsentieren</a>
+          <a class="stretched-link task" href="edit.html">Ergebnisse präsentieren</a>
         </div>
       </div>
       <div class="col-1">
         0%
       </div>
       <div class="col-1">
-        <a href="#" class="delete"><i class="material-icons">clear</i></a>
+        <a href="#" class="delete" data-toggle="modal" data-target="#delete-modal"><i class="material-icons">clear</i></a>
       </div>
     </div>
 
@@ -120,11 +120,31 @@
 
   </div>
 
-  <footer class="text-center mt-5 p-4 fixed-bottom">
+  <footer class="text-center mt-5 p-4">
     <a class="d-inline-block mb-3" href="impressum.html">Impressum</a>
     <br />
     <p class="m-0"><span class="align-top">&copy;</span> My Todo-List</p>
   </footer>
+
+  <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Todo wirklich löschen?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Willst du das Todo "<span class="task-name"></span>" wirklich löschen?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn delete-btn">Löschen!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/todo.bundle.js"></script>
 </body>
